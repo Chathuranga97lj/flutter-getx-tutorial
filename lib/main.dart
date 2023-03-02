@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:getxtest1/home.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,17 +15,18 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: 'Flutter Demo',
       home: Scaffold(
-        appBar: AppBar(title: const Text("Snack Bar")),
+        appBar: AppBar(title: const Text("Route Un named")),
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              TextButton(
-                  child: const Text("Show SnackBar"),
+              ElevatedButton(
+                  child: const Text("Go to home"),
                   onPressed: () {
-                    Get.snackbar("SnackBar", "This will be Snackbar Message",
-                        colorText: Colors.red, backgroundColor: Colors.black);
+                    Get.to(() => const Home(),
+                        arguments: "Data From Home",
+                        transition: Transition.cupertino);
                   })
             ],
           ),

@@ -13,3 +13,16 @@ button press action
 get message or action when clicking snack-bar
 ### overlayBlur , overlayColor
 bluer main screen and forces tha snack-bar
+
+## Un named Route
+### fullscreenDialog: ture
+to make the screen full dialog (change back button to the close button)
+### transition: Transition.zoom
+to provide animation
+## Get.to
+move to next screen. can back return
+## Get.off
+go to the next screen but no option to return to previous screen
+## Get.offAll
+go to the next screen and cancel all the previous screens/routes
+## Get.
