@@ -13,3 +13,13 @@ button press action
 get message or action when clicking snack-bar
 ### overlayBlur , overlayColor
 bluer main screen and forces tha snack-bar
+
+## Dialog box
+### textCancel
+text cancel button for dialog box
+### onCancel 
+action for the cancel 
+### textConfirm
+text confirm button for dialog box
+### onConfirm
+action for the confirm
