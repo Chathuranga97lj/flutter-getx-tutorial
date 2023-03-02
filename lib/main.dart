@@ -23,7 +23,8 @@ class MyApp extends StatelessWidget {
               TextButton(
                   child: const Text("Show SnackBar"),
                   onPressed: () {
-                    Get.snackbar("SnackBar", "This will be Snackbar Message");
+                    Get.snackbar("SnackBar", "This will be Snackbar Message",
+                        colorText: Colors.red, backgroundColor: Colors.black);
                   })
             ],
           ),
