@@ -13,3 +13,6 @@ button press action
 get message or action when clicking snack-bar
 ### overlayBlur , overlayColor
 bluer main screen and forces tha snack-bar
+
+## Bottom sheet
+bottom sheet for buttons
