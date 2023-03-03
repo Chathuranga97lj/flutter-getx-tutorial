@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              TextButton(
+              ElevatedButton(
                   child: const Text("Show SnackBar"),
                   onPressed: () {
                     Get.snackbar("SnackBar", "This will be Snackbar Message",
