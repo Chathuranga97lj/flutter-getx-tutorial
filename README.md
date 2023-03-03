@@ -9,6 +9,8 @@ order of the branches
 * customClass-ObxState
 * getX-controller
 * getX-controllerType
+* getBuilder-simpleState
+* gitX-lifeCycle
 
 ## Sncack bar
 ### default position is Top
