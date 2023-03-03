@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  //const MyApp({super.key});
 
   // This widget is the root of your application.
   @override
@@ -21,11 +21,7 @@ class MyApp extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               ElevatedButton(
-                  child: const Text("Show SnackBar"),
-                  onPressed: () {
-                    Get.snackbar("SnackBar", "This will be Snackbar Message",
-                        colorText: Colors.red, backgroundColor: Colors.black);
-                  })
+                  child: const Text("Show SnackBar"), onPressed: () {})
             ],
           ),
         ),
