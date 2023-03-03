@@ -8,6 +8,7 @@ order of the branches
 * reactive-state
 * customClass-ObxState
 * getX-controller
+* getX-controllerType
 
 ## Sncack bar
 ### default position is Top
