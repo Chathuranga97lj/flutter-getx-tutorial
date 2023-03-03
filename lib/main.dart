@@ -2,11 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  // const MyApp({super.key});
+
+  var count = 0.obs;
+
+  void increment() {
+    count++;
+  }
 
   // This widget is the root of your application.
   @override
@@ -14,17 +20,20 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: 'Flutter Demo',
       home: Scaffold(
-        appBar: AppBar(title: const Text("Snack Bar")),
+        appBar: AppBar(title: const Text("State Management")),
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
+              Obx(() => Text(
+                    "Count value is $count",
+                    style: const TextStyle(fontSize: 25),
+                  )),
               ElevatedButton(
-                  child: const Text("Show SnackBar"),
+                  child: const Text("Increment"),
                   onPressed: () {
-                    Get.snackbar("SnackBar", "This will be Snackbar Message",
-                        colorText: Colors.red, backgroundColor: Colors.black);
+                    increment();
                   })
             ],
           ),
