@@ -1,4 +1,12 @@
 # Get X 
+order of the branches
+* main - SnackBar
+* dialog
+* bottom-sheet
+* route-unnamed
+* named-route
+* reactive-state
+* customClass-ObxState
 
 ## Sncack bar
 ### default position is Top
@@ -13,3 +21,5 @@ button press action
 get message or action when clicking snack-bar
 ### overlayBlur , overlayColor
 bluer main screen and forces tha snack-bar
+
+
