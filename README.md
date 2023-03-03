@@ -7,6 +7,7 @@ order of the branches
 * named-route
 * reactive-state
 * customClass-ObxState
+* getX-controller
 
 ## Sncack bar
 ### default position is Top
