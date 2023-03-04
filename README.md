@@ -12,6 +12,7 @@ order of the branches
 * getBuilder-simpleState
 * gitX-lifeCycle
 * uniqueID
+* getX-workers
 
 ## Sncack bar
 ### default position is Top
