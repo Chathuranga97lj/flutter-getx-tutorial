@@ -10,7 +10,7 @@ order of the branches
 * getX-controller
 * getX-controllerType
 * getBuilder-simpleState
-* gitX-lifeCycle
+* getX-lifeCycle
 * uniqueID
 
 ## Sncack bar
