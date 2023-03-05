@@ -13,6 +13,7 @@ order of the branches
 * gitX-lifeCycle
 * uniqueID
 * getX-workers
+* getX-internationalization
 
 ## Sncack bar
 ### default position is Top
