@@ -1,8 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:getxtest1/service.dart';
 
-void main() {
+Future<void> main() async {
+  await initServices();
   runApp(MyApp());
+}
+
+Future<void> initServices() async {
+  print('Starting services');
+  await Get.putAsync<Service>(() async => await Service());
+  print('All services started');
 }
 
 class MyApp extends StatelessWidget {
@@ -14,14 +22,17 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: 'Flutter Demo',
       home: Scaffold(
-        appBar: AppBar(title: const Text("Snack Bar")),
+        appBar: AppBar(title: const Text("GetX Service")),
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               ElevatedButton(
-                  child: const Text("Show SnackBar"), onPressed: () {})
+                  child: const Text("Increment"),
+                  onPressed: () {
+                    Get.find<Service>().incrementCounter();
+                  })
             ],
           ),
         ),
