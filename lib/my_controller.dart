@@ -1,9 +1,11 @@
 import 'package:get/get.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class MyController extends GetxController {
-  var count = 0;
-  void increment() {
-    count++;
-    update(); // will update the count variable on UI which uses it
+  void incrementCounter() async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    int counter = (prefs.getInt('counter') ?? 0) + 1;
+    print('Pressed $counter times .');
+    await prefs.setInt('counter', counter);
   }
 }
