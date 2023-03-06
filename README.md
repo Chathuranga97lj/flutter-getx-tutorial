@@ -14,6 +14,7 @@ order of the branches
 * uniqueID
 * getX-workers
 * getX-internationalization
+* getX-dependancyInjection
 
 ## Sncack bar
 ### default position is Top
